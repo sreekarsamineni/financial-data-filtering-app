@@ -23,7 +23,7 @@ function App() {
     direction: 'asc',  // Sort direction (asc or desc)
   });
 
-  const API_KEY = 'QcugEOGcctEtUxtRKPZmhZU564Evp4AT';
+  const API_KEY = process.env.REACT_APP_FAPI_KEY;
 
   useEffect(() => {
     axios
