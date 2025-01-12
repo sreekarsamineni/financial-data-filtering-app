@@ -1,68 +1,86 @@
 # Financial Data Filtering App
 
-This is a React application designed to filter and display financial data.
+A React application for filtering and visualizing financial data with features including sorting, filtering, and pagination.
 
-## Deployed App
+## 🚀 Live Demo
 
-You can view the deployed application here:  
-[https://sreekarsamineni.github.io/financial-data-filtering-app/](https://sreekarsamineni.github.io/financial-data-filtering-app/)
+Check out the live application: [Financial Data Filtering App](https://sreekarsamineni.github.io/financial-data-filtering-app/)
 
-## Running the Project Locally
+## 🛠️ Installation & Setup
 
-To run this project locally on your machine, follow these steps:
+### Prerequisites
 
-### 1. Clone the repository
+- Node.js (v14 or higher)
+- npm or yarn
+- A Financial Modeling Prep API key
 
-First, clone the repository to your local machine:
+### Getting Started
+
+1. **Clone the repository**
+
+   ```bash
+   git clone https://github.com/sreekarsamineni/financial-data-filtering-app.git
+   cd financial-data-filtering-app
+   ```
+
+2. **Install dependencies**
+
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+3. **Configure API Key**
+
+   - Sign up for a free API key at [Financial Modeling Prep](https://financialmodelingprep.com/developer/docs/)
+   - Create a `.env` file in the project root
+   - Add your API key:
+     ```
+     REACT_APP_FPI_KEY=your_api_key_here
+     ```
+
+4. **Start the development server**
+   ```bash
+   npm start
+   # or
+   yarn start
+   ```
+   Open [http://localhost:3000](http://localhost:3000) to view the app
+
+## 🚀 Deployment
+
+### Building for Production
+
+Create an optimized production build:
 
 ```bash
-git clone https://github.com/sreekarsamineni/financial-data-filtering-app.git
-2. Navigate to the project directory
-Change into the project directory:
-
-cd financial-data-filtering-app
-3. Install dependencies
-Install the required dependencies using npm or yarn:
-
-npm install
-# or
-yarn install
-4. Set up the API key
-You need a free API key from Financial Modeling Prep to fetch financial data.
-
-Visit Financial Modeling Prep API and sign up for a free API key.
-Once you have your API key, create a .env file in the root of the project and add the following line:
-
-REACT_APP_FINANCIAL_API_KEY=<your-api-key>
-Replace <your-api-key> with the key you received from Financial Modeling Prep.
-
-5. Start the development server
-Run the following command to start the development server:
-
-npm start
-# or
-yarn start
-This will run the app in development mode. Open http://localhost:3000 to view it in the browser.
-
-6. Build the app (optional)
-To create a production build of the app, use:
-
 npm run build
 # or
 yarn build
-This will create a build folder with the optimized production version of the app.
-
-Deployment
-This app is deployed using GitHub Pages. The deployment process is handled by the gh-pages package. The deployment is triggered with the following command:
-
-npm run deploy
-# or
-yarn deploy
-Technologies Used
-React
-Create React App
-GitHub Pages
-Financial Modeling Prep API (for financial data)
-
-You can copy this entire file and use it directly for your project!
 ```
+
+### Deploying to GitHub Pages
+
+1. Update the `homepage` field in `package.json`:
+
+   ```json
+   {
+     "homepage": "https://sreekarsamineni.github.io/financial-data-filtering-app"
+   }
+   ```
+
+2. Deploy to GitHub Pages:
+   ```bash
+   npm run deploy
+   # or
+   yarn deploy
+   ```
+
+## 🔧 Technologies Used
+
+- **Frontend Framework**: React
+- **Build Tool**: Create React App
+- **Styling**: Tailwind CSS
+- **Deployment**: GitHub Pages
+- **Data Source**: Financial Modeling Prep API
