@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .bg-pattern-bg {
+    background-image: url("https://www.transparenttextures.com/patterns/geometry.png");
+  }
+}
+
 .App {
   text-align: center;
 }
